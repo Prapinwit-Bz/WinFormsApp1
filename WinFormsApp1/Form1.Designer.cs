@@ -35,6 +35,7 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -100,11 +101,22 @@
             label3.TabIndex = 6;
             label3.Text = "ผลลัพธ์";
             // 
+            // button2
+            // 
+            button2.Location = new Point(77, 320);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 7;
+            button2.Text = "เคลียร์";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(221, 450);
+            Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -127,5 +139,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button button2;
     }
 }
