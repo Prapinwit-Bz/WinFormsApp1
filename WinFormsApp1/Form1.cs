@@ -14,7 +14,7 @@ namespace WinFormsApp1
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // Attach the TextChanged event handler to TextBox1
+            // Attach the TextChanged event handler to TextBox1 and TextBox2
             textBox1.TextChanged += textBox1_TextChanged;
             textBox2.TextChanged += textBox2_TextChanged;
         }

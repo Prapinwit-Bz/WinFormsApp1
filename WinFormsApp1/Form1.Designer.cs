@@ -79,7 +79,7 @@
             // 
             textBox3.BackColor = Color.White;
             textBox3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(173, 288);
+            textBox3.Location = new Point(178, 288);
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
             textBox3.Size = new Size(100, 39);
@@ -115,11 +115,11 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Yellow;
-            label3.Location = new Point(186, 255);
+            label3.Location = new Point(166, 255);
             label3.Name = "label3";
-            label3.Size = new Size(73, 30);
+            label3.Size = new Size(125, 30);
             label3.TabIndex = 6;
-            label3.Text = "ผลลัพธ์";
+            label3.Text = "ผลลัพธ์ (บาท)";
             // 
             // button2
             // 
@@ -163,7 +163,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.Yellow;
-            label5.Location = new Point(253, 262);
+            label5.Location = new Point(284, 264);
             label5.Name = "label5";
             label5.Size = new Size(32, 21);
             label5.TabIndex = 11;
