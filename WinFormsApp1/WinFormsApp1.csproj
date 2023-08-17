@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="C:\Users\Benz\Desktop\Form1.cs" Link="Form1.cs" />
+    <Compile Include="C:\Users\Benz\Desktop\benzkuy\Form1.cs" Link="Form1.cs" />
   </ItemGroup>
 
 </Project>

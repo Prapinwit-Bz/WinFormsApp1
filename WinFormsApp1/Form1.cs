@@ -19,10 +19,9 @@ namespace WinFormsApp1
             textBox2.TextChanged += textBox2_TextChanged;
         }
 
-        private void textBox1_TextChanged(object? sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 #pragma warning disable CS8321 // Local function is declared but never used
-            // Check if the input in TextBox1 is a valid number
             if (double.TryParse(textBox1.Text, out double distance))
             {
                 // Calculate the cost based on the given distance
@@ -107,21 +106,6 @@ namespace WinFormsApp1
         }
 
         private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
         {
 
         }

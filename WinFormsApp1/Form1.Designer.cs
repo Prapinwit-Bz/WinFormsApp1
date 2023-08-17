@@ -44,9 +44,6 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -141,7 +138,6 @@
             textBox4.ReadOnly = true;
             textBox4.Size = new Size(100, 23);
             textBox4.TabIndex = 8;
-            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // textBox5
             // 
@@ -150,7 +146,6 @@
             textBox5.ReadOnly = true;
             textBox5.Size = new Size(100, 23);
             textBox5.TabIndex = 9;
-            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label4
             // 
@@ -219,46 +214,12 @@
             label9.TabIndex = 15;
             label9.Text = "⋗";
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.ForeColor = Color.Black;
-            label10.Location = new Point(276, 312);
-            label10.Name = "label10";
-            label10.Size = new Size(26, 15);
-            label10.TabIndex = 16;
-            label10.Text = "บาท";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.ForeColor = Color.Yellow;
-            label11.Location = new Point(110, 142);
-            label11.Name = "label11";
-            label11.Size = new Size(29, 15);
-            label11.TabIndex = 17;
-            label11.Text = "ราคา";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.ForeColor = Color.Yellow;
-            label12.Location = new Point(301, 142);
-            label12.Name = "label12";
-            label12.Size = new Size(29, 15);
-            label12.TabIndex = 18;
-            label12.Text = "ราคา";
-            label12.Click += label12_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 64, 0);
             ClientSize = new Size(445, 375);
-            Controls.Add(label12);
-            Controls.Add(label11);
-            Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -299,8 +260,5 @@
         private Label label7;
         private Label label8;
         private Label label9;
-        private Label label10;
-        private Label label11;
-        private Label label12;
     }
 }
