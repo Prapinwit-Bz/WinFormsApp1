@@ -1,13 +1,13 @@
 ﻿using System;
 
 namespace WinFormsApp1
-{     
+{
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-        }       
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -81,9 +81,9 @@ namespace WinFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-           textBox1.Clear();
-           textBox2.Clear();
-           textBox3.Clear();
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
         }
     }
 }
