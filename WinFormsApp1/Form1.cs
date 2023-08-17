@@ -12,10 +12,25 @@ namespace WinFormsApp1
         {
 
         }
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // Attach the TextChanged event handler to TextBox1
+            textBox1.TextChanged += textBox1_TextChanged;
+            textBox2.TextChanged += textBox2_TextChanged;
+        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object? sender, EventArgs e)
         {
 #pragma warning disable CS8321 // Local function is declared but never used
+            // Check if the input in TextBox1 is a valid number
+            if (double.TryParse(textBox1.Text, out double distance))
+            {
+                // Calculate the cost based on the given distance
+                double cost = CalculateFare(distance);
+
+                // Update TextBox2 with the calculated cost
+                textBox4.Text = cost.ToString(); // Display cost with 2 decimal places
+            }
             static double CalculateFare(double distance)
             {
                 if (distance <= 1)
@@ -53,10 +68,13 @@ namespace WinFormsApp1
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 #pragma warning disable CS8321 // Local function is declared but never used
-            static double CalculateFare(double distance, double ratePerMinute)
+            if (double.TryParse(textBox2.Text, out double distance))
             {
-                double fare = distance * ratePerMinute;
-                return fare;
+                // Calculate the cost based on the given distance
+                double cost2 = distance * 3;
+
+                // Update TextBox2 with the calculated cost
+                textBox5.Text = cost2.ToString(); // Display cost with 2 decimal places
             }
 #pragma warning restore CS8321 // Local function is declared but never used
         }
@@ -64,11 +82,11 @@ namespace WinFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             // รับค่าจาก TextBox 1 และ TextBox 2
-            double value1 = Convert.ToDouble(textBox1.Text);
-            double value2 = Convert.ToDouble(textBox2.Text);
+            double value1 = Convert.ToDouble(textBox4.Text);
+            double value2 = Convert.ToDouble(textBox5.Text);
 
             // ทำการคำนวณ
-            double result = value1 * value2;
+            double result = value1 + value2;
 
             // แสดงผลลัพธ์ใน Label หรือ TextBox ที่คุณต้องการ
             textBox3.Text = "" + result.ToString();
@@ -84,9 +102,26 @@ namespace WinFormsApp1
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
         {
 
         }
