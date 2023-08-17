@@ -71,7 +71,7 @@ namespace WinFormsApp1
             double result = value1 * value2;
 
             // แสดงผลลัพธ์ใน Label หรือ TextBox ที่คุณต้องการ
-            textBox3.Text = "ผลคูณ: " + result.ToString();
+            textBox3.Text = "" + result.ToString();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -84,6 +84,11 @@ namespace WinFormsApp1
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

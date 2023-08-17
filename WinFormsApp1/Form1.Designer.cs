@@ -39,6 +39,11 @@
             textBox4 = new TextBox();
             textBox5 = new TextBox();
             label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -74,7 +79,7 @@
             // 
             textBox3.BackColor = Color.White;
             textBox3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(177, 288);
+            textBox3.Location = new Point(173, 288);
             textBox3.Name = "textBox3";
             textBox3.ReadOnly = true;
             textBox3.Size = new Size(100, 39);
@@ -110,7 +115,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.Yellow;
-            label3.Location = new Point(187, 255);
+            label3.Location = new Point(186, 255);
             label3.Name = "label3";
             label3.Size = new Size(73, 30);
             label3.TabIndex = 6;
@@ -144,11 +149,68 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(358, 293);
+            label4.ForeColor = Color.Black;
+            label4.Location = new Point(357, 295);
             label4.Name = "label4";
             label4.Size = new Size(42, 30);
             label4.TabIndex = 10;
             label4.Text = "🗑️";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.Yellow;
+            label5.Location = new Point(253, 262);
+            label5.Name = "label5";
+            label5.Size = new Size(32, 21);
+            label5.TabIndex = 11;
+            label5.Text = "✨";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.Yellow;
+            label6.Location = new Point(207, 159);
+            label6.Name = "label6";
+            label6.Size = new Size(33, 25);
+            label6.TabIndex = 12;
+            label6.Text = "➕";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.FromArgb(192, 0, 0);
+            label7.Location = new Point(276, 202);
+            label7.Name = "label7";
+            label7.Size = new Size(36, 40);
+            label7.TabIndex = 13;
+            label7.Text = "⋖";
+            label7.Click += label7_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = Color.Yellow;
+            label8.Location = new Point(178, 3);
+            label8.Name = "label8";
+            label8.Size = new Size(94, 65);
+            label8.TabIndex = 14;
+            label8.Text = "🌞";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.ForeColor = Color.FromArgb(192, 0, 0);
+            label9.Location = new Point(136, 202);
+            label9.Name = "label9";
+            label9.Size = new Size(36, 40);
+            label9.TabIndex = 15;
+            label9.Text = "⋗";
             // 
             // Form1
             // 
@@ -156,6 +218,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 64, 0);
             ClientSize = new Size(445, 375);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
@@ -186,5 +253,10 @@
         private TextBox textBox4;
         private TextBox textBox5;
         private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
     }
 }
